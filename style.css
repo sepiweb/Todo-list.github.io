@@ -1,0 +1,159 @@
+/* @sepiweb */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.1s;
+  }
+  h1 {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+  }
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    background-color: rgba(5, 12, 43, 0.783);
+    position: relative;
+  }
+
+  svg {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 86%), #2f1158);
+    z-index: 0;
+  }
+
+  .main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20rem;
+    max-width: 23rem;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container .todoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .container .todoBox .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.9rem 0.9rem;
+    background: rgba(0, 157, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+    border: 2px solid rgba(0, 106, 177, 0.198);
+    color: white;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  .container .todoBox .Todo i {
+    color: rgb(255, 255, 255);
+  }
+  .container input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    background-color: rgb(5, 12, 43);
+    color: white;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #05fcd7;
+    color: #03ddff;
+    text-shadow: 0 0 20px #0c1ea2;
+    margin: 1rem 0;
+  }
+  .boxIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+  }
+  .boxIcon i:hover {
+    color: #ff6b30 !important;
+  }
+  .boxIcon i:nth-child(1) {
+    margin: 0 1rem;
+  }
+  .boxIcon i:nth-child(1):hover {
+    color: #30ffd2 !important;
+  }
+  .blur {
+    filter: blur(1px);
+    text-decoration: line-through;
+    color: #30ffd2 !important;
+  }
+  .blured {
+    color: #30ffd2 !important;
+  }
+  #clear {
+    display: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: #27257b;
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+  }
+  @media screen and (max-width: 450px) {
+    html {
+      font-size: 17px;
+    }
+  }
+
+  .ErrorMenu {
+    width: fit-content;
+    height: 7vh;
+    font-size: 0.9rem;
+    padding: 2px 14px;
+    box-sizing: content-box;
+    background: rgba(255, 55, 55, 0.747);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    transform: translateX(-140%);
+    transition: all 0.5s;
+  }
